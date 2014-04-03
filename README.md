@@ -14,7 +14,7 @@ using [Mina] (http://nadarei.co/mina).
     ...
     # Required mina_slack options
     set :slack_api_token, 'xxxyyyzzz'
-    set :slack_channels, ['#general']
+    set :slack_channels, ['#general', '@mbajur', '#nerd']
 
     task :deploy do
       deploy do
