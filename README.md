@@ -39,10 +39,10 @@ using [Mina] (http://nadarei.co/mina).
 | ------------------------- | ------------------------------------------------------------------------------------ |
 | *__slack_api_token__**    | API auth token.                                                                      |
 | *__slack_channels__**     | Array of channels (or users) where notifications will be sent to.                    |
-| *slack_username*          | Name of bot.                                                                         |
-| *slack_author*            | Author of a deploy displayed in deploy messages.                                     |
-| *slack_link_names*        | Find and link channel names and usernames.                                           |
-| *slack_parse*             | Change how messages are treated. [Read more] (https://api.slack.com/docs/formatting) |
+| *slack_username*          | Name of bot. <br> _default: Deploy_                                                  |
+| *slack_author*            | Author of a deploy displayed in deploy messages. <br> _default: Someone_             |
+| *slack_link_names*        | Find and link channel names and usernames. <br> _default: 1_                         |
+| *slack_parse*             | Change how messages are treated. [Read more] (https://api.slack.com/docs/formatting) <br> _default: full_ |
 
 __* required options__
 
