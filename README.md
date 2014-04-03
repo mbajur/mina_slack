@@ -38,7 +38,7 @@ using [Mina] (http://nadarei.co/mina).
 | Option                    | Description                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------ |
 | *__slack_api_token__**    | API auth token.                                                                      |
-| *__slack_channels__**     | Channels where notifications will be sent to.                                        |
+| *__slack_channels__**     | Array of channels (or users) where notifications will be sent to.                    |
 | *slack_username*          | Name of bot.                                                                         |
 | *slack_author*            | Author of a deploy displayed in deploy messages.                                     |
 | *slack_link_names*        | Find and link channel names and usernames.                                           |
