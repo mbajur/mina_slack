@@ -37,14 +37,14 @@ using [Mina] (http://nadarei.co/mina).
 
 | Option                    | Description                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------ |
-| *__slack_api_token__**    | API auth token.                                                                      |
-| *__slack_channels__**     | Array of channels (or users) where notifications will be sent to.                    |
-| *slack_username*          | Name of bot. <br> _default: Deploy_                                                  |
-| *slack_author*            | Author of a deploy displayed in deploy messages. <br> _default: Someone_             |
-| *slack_link_names*        | Find and link channel names and usernames. <br> _default: 1_                         |
-| *slack_parse*             | Change how messages are treated. [Read more] (https://api.slack.com/docs/formatting) <br> _default: full_ |
-| *slack_icon_url*          | URL to an image to use as the icon for this message <br> _default: nil_ |
-| *slack_icon_emoji*        | emoji to use as the icon for this message. Overrides `slack_icon_url`. <br> _default: :slack:_ |
+| __slack_api_token__       | API auth token.                                                                      |
+| __slack_channels__        | Array of channels (or users) where notifications will be sent to.                    |
+| slack_username            | Name of bot. <br> _default: Deploy_                                                  |
+| slack_author              | Author of a deploy displayed in deploy messages. <br> _default: Someone_             |
+| slack_link_names          | Find and link channel names and usernames. <br> _default: 1_                         |
+| slack_parse               | Change how messages are treated. [Read more] (https://api.slack.com/docs/formatting) <br> _default: full_ |
+| slack_icon_url            | URL to an image to use as the icon for this message <br> _default: nil_ |
+| slack_icon_emoji          | emoji to use as the icon for this message. Overrides `slack_icon_url`. <br> _default: :slack:_ |
 
 __* required options__
 
