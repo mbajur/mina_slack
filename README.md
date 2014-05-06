@@ -43,6 +43,8 @@ using [Mina] (http://nadarei.co/mina).
 | *slack_author*            | Author of a deploy displayed in deploy messages. <br> _default: Someone_             |
 | *slack_link_names*        | Find and link channel names and usernames. <br> _default: 1_                         |
 | *slack_parse*             | Change how messages are treated. [Read more] (https://api.slack.com/docs/formatting) <br> _default: full_ |
+| *slack_icon_url*          | URL to an image to use as the icon for this message <br> _default: nil_ |
+| *slack_icon_emoji*        | emoji to use as the icon for this message. Overrides `slack_icon_url`. <br> _default: :slack:_ |
 
 __* required options__
 

@@ -27,6 +27,14 @@ set_default :slack_link_names, 1
 # Sets the deployment author name
 set_default :slack_parse, 'full'
 
+# ### icon_url
+# URL to an image to use as the icon for this message
+set_default :slack_icon_url, ''
+
+# ### icon_emoji
+# Sets emoji to use as the icon for this message. Overrides `slack_icon_url`
+set_default :slack_icon_emoji, ':slack:'
+
 # ## Control Tasks
 namespace :slack do
 
@@ -62,7 +70,7 @@ namespace :slack do
   end
 
   def send_message(params = {})
-    queue %[curl -X POST https://slack.com/api/chat.postMessage -d "token=#{slack_api_token}&channel=#{params[:channel]}&username=#{slack_username}&text=#{params[:text]}&attachments='[{"fields": [{"value": "Value"}]}]'&parse=#{slack_parse}&link_names=#{link_names}" --silent > /dev/null]
+    queue %[curl -X POST https://slack.com/api/chat.postMessage -d "token=#{slack_api_token}&channel=#{params[:channel]}&username=#{slack_username}&text=#{params[:text]}&attachments='[{"fields": [{"value": "Value"}]}]'&parse=#{slack_parse}&link_names=#{link_names}&icon_url=#{slack_icon_url}&icon_emoji=#{slack_icon_emoji}" --silent > /dev/null]
   end
 
 end
