@@ -1,4 +1,4 @@
-mina_slack
+mina_slack <a href="http://badge.fury.io/rb/mina_slack"><img src="https://badge.fury.io/rb/mina_slack.svg" alt="Gem Version" height="18"></a>
 ============
 
 mina_slack is a gem that adds tasks for sending notifications to [Slack] (http://slack.com)
